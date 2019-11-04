@@ -8,19 +8,19 @@
  
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.4_2.png)
 
-3.	Close the SSMS application and log back in, using the same values the Connect to Server window as before (should be cached) 
-- Server name: labsqlXXXXXX.database.windows.net
-- Authentication: SQL Server Authentication
-- Login: demouser
-- Password: demoPassword1!
+3.	Close the SSMS application and log back in, using the same values the __Connect to Server__ window as before (should be cached) 
+- __Server name: labsqlXXXXXX.database.windows.net
+- __Authentication: SQL Server Authentication
+- __Login: demouser
+- __Password: demoPassword1!
 
-4.	In the Object Explorer window, navigate to Databases > labsqldb > Tables, then right click and make a new table and add in a few columns:
+4.	In the Object Explorer window, navigate to Databases > labsqldb > __Tables__, then right click and make a new table and add in a few columns:
 
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.4_4.png)
 
-5.	Then go to file > save, name it “Table_2”, and click okay. 
+5.	Then go to __file > save__, name it “Table_2”, and click __okay__. 
 
 6.	Congratulations, you are now securely managing your Azure SQL instance from VNET_SPOKE to a Private Endpoint in VNET_HUB, using nothing but RFC1918 private IP space. 
 
 
-__Your POC has been a success, it’s time to ask your boss for a raise!__
+### Your POC has been a success, it’s time to ask your boss for a raise!
