@@ -1,21 +1,21 @@
 # Test public connectivity to Azure SQL 
 
-1.	In your lab portal, go to Virtual Machines and copy the DNS name of VM-WIN-SPOKE:
+1.	In your lab portal, go to __Virtual Machines__ and copy the DNS name of __VM-WIN-SPOKE__:
 
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.1_1.png)
 
 2.	On your lab workstation, open the Remote Desktop Connection app. 
-- Before connecting to your VM, click “Show Options”
+- __Before connecting__ to your VM, click “Show Options”
 - Paste in the DNS name of your VM in the “Computer field”
-- Enter the user name: “demouser” 
+- Enter the __user name: “demouser”__ 
 - Select “Allow me to save credentials” then hit “Connect”
-- Enter the password: “demoPassword1!”
+- Enter the __password: “demoPassword1!”__
 - Check the “Remember me” box, then click “OK”.
 - On the certificate trust window, click the “Yes” button.
 
 3.	Accept the default privacy settings at login and close out any open windows and prompts.
 
-4.	From the search bar on the desktop, search for “SSMS” then launch Microsoft SQL Server Management Studio.
+4.	From the search bar on the desktop, search for __“SSMS”__ then launch Microsoft SQL Server Management Studio.
 
 5.	As SSMS launches, return to the lab portal and under “Environmental Details”, locate “SQL Server Name”, “SQL Server Username”, and “SQL Server Password”.
 
@@ -25,7 +25,7 @@
   
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.1_6.png)
 
-7.	After logging in, open Databases > labsqldb > Tables, Right click Tables, and select New Table. 
+7.	After logging in, open __Databases > labsqldb > Tables__, Right click Tables, and select __New Table__. 
 
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.1_7.png)
 
@@ -33,9 +33,9 @@
 
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.1_8.png)
 
-9.	Go to File > Save Table_1 (or hit Ctrl + s) and save out your table as “Table_1”. 
+9.	Go to File > Save Table_1 (or hit Ctrl + s) and save out your table as __“Table_1”__. 
  
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.1_9.png)
  
 
-__Nice work, you’ve just tested your Azure SQL DB using public connectivity from an Azure VM. Time for the next task.__ 
+### Nice work, you’ve just tested your Azure SQL DB using public connectivity from an Azure VM. Time for the next task.
