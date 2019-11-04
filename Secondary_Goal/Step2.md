@@ -1,45 +1,45 @@
 # Shut off outbound Internet access to the spoke VM with an NSG and test
 
-1.	Return to your Azure Portal, then go to Home > Create a Resource and select it.
+1.	Return to your Azure Portal, then go to __Home > Create a Resource__ and select it.
 
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.2_1.png)
  
-2.	Type in “Network Security Group” in search bar and select the Network Security Group tile, then click Create on the following screen. 
+2.	Type in __“Network Security Group”__ in search bar and select the Network Security Group tile, then click __Create__ on the following screen. 
 
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.2_2.png)
 
-3.	Under the Basics tab, input the following values, then click Review + create, then Create
-- Resource Group: ODL-Networking-XXXXXX
-- Name: NSG_VM_WIN_SPOKE
-- Region: West US 2
+3.	Under the __Basics__ tab, input the following values, then click __Review + create__, then __Create__
+- __Resource Group: ODL-Networking-XXXXXX__
+- __Name: NSG_VM_WIN_SPOKE__
+- __Region: West US 2__
  
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.2_3.png)
 
-4.	Once creation is complete, select Go to Resource
+4.	Once creation is complete, select __Go to Resource__
 
-5.	Under the NSG menu, select Inbound security rules, click + Add, then input the following values. Leave the rest in as default.
-- Destination: VirtualNetwork
-- Destination port ranges: 3389
-- Protocol: TCP
-- Name: Allow_RDP
-- Then click “Add”
+5.	Under the NSG menu, select __Inbound security rules__, click __+ Add__, then input the following values. Leave the rest in as default.
+- __Destination: VirtualNetwork__
+- __Destination port ranges: 3389__
+- __Protocol: TCP__
+- __Name: Allow_RDP__
+- Then click __“Add”__
  
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.2_5.png)
 
-6.	Now select Outbound Security Rules, click + Add, and enter the following values, leaving the rest default.
-- Destination: Service Tag
-- Destination service tag: Internet
-- Destination port ranges: * 
-- Name: Deny_Internet
-- Then click “Add”
+6.	Now select __Outbound Security Rules__, click __+ Add__, and enter the following values, leaving the rest default.
+- __Destination: Service Tag__
+- __Destination service tag: Internet__
+- __Destination port ranges: *__
+- __Name: Deny_Internet__
+- Then click __“Add”__
 
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.2_6.png)
 
-7.	Next, select Network Interfaces, then click + Associate.
+7.	Next, select __Network Interfaces__, then click __+ Associate__.
 
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.2_7.png)
  
-8.	Locate and select the NIC with the name vm-win-spokeXXX
+8.	Locate and select the NIC with the name __vm-win-spokeXXX__
 
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.2_8.png)
 
@@ -51,4 +51,4 @@
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.2_9.png)
 
 
-__Good work, you have successfully blocked outbound Internet access for your VM in VNET_SPOKE.  On to the next task.__
+### Good work, you have successfully blocked outbound Internet access for your VM in VNET_SPOKE.  On to the next task.
