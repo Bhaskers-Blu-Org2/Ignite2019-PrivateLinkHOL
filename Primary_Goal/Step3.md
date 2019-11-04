@@ -1,34 +1,34 @@
 # Configure Private Link for your Storage Account 
 
-1.	Return to your Azure Portal session and go back to the labstorageXXXXXX main menu.
+1.	Return to your Azure Portal session and go back to the __labstorageXXXXXX__ main menu.
 
-2.	Select Private endpoint connection then click + Private Endpoint.
+2.	Select __Private endpoint connection__ then click __+ Private Endpoint__.
 
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/1.3_2.png)
  
-3.	Under the Basics tab, set the following values: 
-- Name: labstorage
-- Region: (US)West US 2
-- IMPORTANT: Double check the region, the wrong value will invalidate next steps. 
+3.	Under the __Basics__ tab, set the following values: 
+- __Name: labstorage__
+- __Region: (US)West US 2__
+- __IMPORTANT:__ Double check the region, the wrong value will invalidate next steps. 
 
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/1.3_3.png)
 
-4.	Under the Resource tab, set the following values: 
-- Resource type: Microsoft.Storage/storageAccounts 
-- Resource: labstorageXXXXX 
-- Target sub-resource: blob 
+4.	Under the __Resource__ tab, set the following values: 
+- __Resource type: Microsoft.Storage/storageAccounts__
+- __Resource: labstorageXXXXX__
+- __Target sub-resource: blob__
   
  ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/1.3_4.png)
 
-5.	Under the Configuration tab, set the following values: 
-- Virtual network: VNET_HUB 
-- Subnet: SUBNET_PRIVATE_LINK (192.168.1.0/25) 
-- Integrate with private DNS zone: Yes 
-- Private DNS Zone: default (privatelink.blob.core.windows.net)
+5.	Under the __Configuration__ tab, set the following values: 
+- __Virtual network: VNET_HUB__
+- __Subnet: SUBNET_PRIVATE_LINK (192.168.1.0/25)__
+- __Integrate with private DNS zone: Yes__
+- __Private DNS Zone: default (privatelink.blob.core.windows.net)__
  
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/1.3_5.png)
 
-6.	Click Review + Create, then Create
+6.	Click __Review + Create__, then __Create__
 
 7.	Click “Go to Resource” and review the details of your new Private Link service. 
 - Notice how your fqdn, “labstorageXXXXX.blob.core.windows.net” now points to 192.168.5
@@ -51,9 +51,9 @@ Within the Resource Group, use the inner search bar and type in “privatelink�
 
 11.	How does this all work?
 - A DNS Forwarder, VM-DNS-HUB, has been built in VNET-HUB to access the privatelink.blob.core.windows.net zone, managed by Azure.
-- VM-ON-PREM-DNS points to VM-DNS-HUB for the “*.blob.core.window.net” zone.
-- Finally, VM-WIN-ON-PREM points to VM-ON-PREM-DNS for its DNS. 
+- __VM-ON-PREM-DNS__ points to __VM-DNS-HUB__ for the “*.blob.core.window.net” zone.
+- Finally, __VM-WIN-ON-PREM__ points to __VM-ON-PREM-DNS__ for its DNS. 
 - The nslookup request will be forwarded to VM-ON-PREM-DNS, then to VM-DNS-HUB, which will answer with the CNAME record that you see above.  
 
 
-__Congrats, you have deployed a Private Link service for your blob and configured a private DNS zone. Now time to test.__
+### Congrats, you have deployed a Private Link service for your blob and configured a private DNS zone. Now time to test.
