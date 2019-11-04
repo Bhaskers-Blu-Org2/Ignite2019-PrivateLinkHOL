@@ -9,10 +9,10 @@
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.4_2.png)
 
 3.	Close the SSMS application and log back in, using the same values the __Connect to Server__ window as before (should be cached) 
-- __Server name: labsqlXXXXXX.database.windows.net
-- __Authentication: SQL Server Authentication
-- __Login: demouser
-- __Password: demoPassword1!
+- __Server name: labsqlXXXXXX.database.windows.net__
+- __Authentication: SQL Server Authentication__
+- __Login: demouser__
+- __Password: demoPassword1!__
 
 4.	In the Object Explorer window, navigate to Databases > labsqldb > __Tables__, then right click and make a new table and add in a few columns:
 
