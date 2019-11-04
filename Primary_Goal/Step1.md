@@ -52,4 +52,5 @@
 
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/1.1_12.png)
 
-_Good work. You’ve created your blob container and tested connectivity over the Internet. You’re ready for the next task._ 
+
+__Good work. You’ve created your blob container and tested connectivity over the Internet. You’re ready for the next task.__ 
