@@ -42,7 +42,7 @@ Within the Resource Group, use the inner search bar and type in “privatelink�
  
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/1.3_8b.png)
 
-9.	Take a note of the A record – it should be 129.168.1.5 
+9.	Take a note of the A record – it should be 192.168.1.5 
 - Azure will alias, or link, “labstorageXXXXXX.blob.core.windows.net” to this A record using a special CNAME record (not visible in the portal).  
 
 10.	Test this functionality out using nslookup from the cmd window from your RDP session to VM-WIN-ON-PREM
