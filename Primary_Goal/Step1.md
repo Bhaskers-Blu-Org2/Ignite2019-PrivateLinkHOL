@@ -38,6 +38,7 @@
 9.    On the __Connection Summary__ window, click __Connect__
 
 10.   Your storage account info should populate into the __Explorer menu__: 
+- From the __Preview__ menu ensure the __Use AzCopy for Improved Blob Upload and Download__ is __NOT__ selected.
 
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/1.1_10.png)
 
