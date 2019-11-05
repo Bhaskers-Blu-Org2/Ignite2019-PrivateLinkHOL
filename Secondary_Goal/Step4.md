@@ -3,7 +3,7 @@
 1.	Return once more to your RDP session for VM-WIN-SPOKE.
 
 2.	Open a the cmd app from the desktop and use nslookup to test your private DNS:
-- nslookup labsqlXXXXXX.windows.database.windows.net
+- nslookup labsqlXXXXXX.database.windows.net
 - Hint: You can find your unique hostname by on the lab portal under Environment Details: Storage Account Name, or just peek at the SMSS login window if it’s still open. 
  
 ![alt text](https://github.com/microsoft/Ignite2019-PrivateLinkHOL/blob/master/images/2.4_2.png)
